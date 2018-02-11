@@ -1,0 +1,22 @@
+
+body{
+   background-color: black;
+}
+
+button{
+    width: 45px;
+    height: 45px;
+    background-color: lightblue;
+}
+button:hover{
+    background-color: cadetblue;
+}
+table{
+    margin-left: 45%;
+}
+h2{
+    margin-left: 45%;
+    width: 200px;
+    color: black;
+    background-color: white;
+}

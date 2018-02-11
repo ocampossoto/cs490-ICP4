@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angularTodo">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo in Angular.js</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,500' rel='stylesheet'
+          type='text/css'>
+    <script src="https://use.fontawesome.com/21be5f2318.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+    <script src="todo.js"></script>
+
+</head>
+<body ng-controller="angularTodoC">
+// 2. write html(view) code to display the todo list
+<div class="container">
+    <h1>To Do List</h1>
+    <input type="text" ng-model="item_name">
+    <button type=button id="add" ng-click="add_list()">add</button>
+
+    <table>
+        <tr ng-repeat="item in items" class="row">
+            <td>
+                <h1 id="num" ng-model="count">{{item.num}}.</h1>
+            </td>
+            <td>
+                <h1 id="name" ng-model="item">{{item.name}}</h1>
+            </td>
+            <td>
+                <button id="delete" ng-click="delete(item.id)">Delete</button>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+
+</body>
+</html>
